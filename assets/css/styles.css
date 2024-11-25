@@ -215,13 +215,13 @@ p {
   background-image: none;
 }
 .sec2 .counter-section .sphead::before {
-  content: url('../../assets/img/bottom-left-img.png');
+  content: url("../../assets/img/bottom-left-img.png");
   position: absolute;
   bottom: 10%;
   left: 0;
 }
 .sec2 .counter-section .sphead::after {
-  content: url('../../assets/img/centerimg.png');
+  content: url("../../assets/img/centerimg.png");
   position: absolute;
   right: 0%;
   top: 2%;
@@ -250,7 +250,7 @@ p {
   line-height: 72px;
   font-size: 50px;
   color: #5a36c5;
-  text-shadow: 4px 4px 4px #5A36C53B;
+  text-shadow: 4px 4px 4px #5a36c53b;
   text-align: center;
   margin: 0 !important;
 }
@@ -261,38 +261,37 @@ p {
   }
   .sec2 .content-counter {
     padding: 0 25px;
-}
+  }
 }
 @media (max-width: 991px) {
- 
   .sec2 .counter-section .content-counter p {
     font-size: 20px;
     margin-bottom: 40px;
   }
   .sec2 .content-counter .counter-number {
     line-height: 52px !important;
-  font-size: 30px !important;
+    font-size: 30px !important;
   }
 }
 /* -----------------counter sec end--------------------- */
 
 /* -----------------sec 2 start--------------------- */
-.sec2{
+.sec2 {
   background-image: url(../img/background-design-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-  background-color: #FFF5E6;
+  background-color: #fff5e6;
 }
 .sec2 .sphead::before {
-  content: url('../../assets/img/bottom-left-img.png');
+  content: url("../../assets/img/bottom-left-img.png");
   position: absolute;
   bottom: 10%;
   left: 0;
 }
 .sec2 .sphead::after {
-  content: url('../../assets/img/centerimg.png');
+  content: url("../../assets/img/centerimg.png");
   position: absolute;
   right: 10%;
   top: 2%;
@@ -318,7 +317,7 @@ p {
   .sec2 .sphead::before {
     content: none;
   }
-  .sec2 .content  {
+  .sec2 .content {
     padding: 0 0 55px 0;
   }
 }
@@ -357,7 +356,7 @@ p {
   padding-top: 3px;
 }
 .sec4 .content h4 {
-  font-family: 'Red Hat Display';
+  font-family: "Red Hat Display";
   font-weight: 700;
   font-size: 32px;
   line-height: 42.34px;
@@ -379,7 +378,7 @@ p {
 /* -----------------sec 5 end--------------------- */
 /* -----------------sec 6 start--------------------- */
 @media (max-width: 768px) {
-  .brand-image img{
+  .brand-image img {
     margin-bottom: 20px;
   }
 }
@@ -439,6 +438,8 @@ p {
   background: url("../../assets/img/darklimg.png") no-repeat left top;
   padding-left: 5%;
   position: relative;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -446,8 +447,9 @@ p {
     background: none;
     padding-left: 0;
     position: relative;
+  }
 }
-}
+
 /* swiper code */
 .proyectos .swiper-container {
   width: 100%;
@@ -490,14 +492,14 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
   overflow: hidden;
   word-wrap: break-word;
   color: rgba(90, 54, 197, 1);
-
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   position: absolute !important;
   top: 50% !important;
   margin: 0 !important;
@@ -505,37 +507,58 @@ p {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .swiper-button-next, .swiper-button-prev {
-    display: none !important;
-  }
-}
-.swiper-button-next::after, .swiper-button-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   display: none;
 }
 
 .swiper-button-next {
-  right: -32px !important; 
+  right: -32px !important;
 }
 
 .swiper-button-prev {
-  left: 25px !important;
+  left: 34px !important;
 }
-
+@media (max-width: 768px) {
+  .swiper-button-prev {
+    left: -32px !important;
+  }
+}
+@media (max-width: 991px) and (min-width:768px) {
+  .swiper-button-prev {
+    left: 6px !important;
+  }
+}
+@media (max-width: 1024px) and (min-width:991px) {
+  .swiper-button-prev {
+    left: 12px !important;
+  }
+}
+@media (max-width: 1400px) and (min-width:1100px) {
+  .swiper-button-prev {
+    left: 25px !important;
+  }
+}
 /* Hide buttons initially */
-.swiper-button-next img, .swiper-button-prev img{
+.swiper-button-next img,
+.swiper-button-prev img {
   opacity: 0;
   pointer-events: none;
   width: 70px;
 }
 
 /* Show buttons when needed */
-.swiper-button-next.active img, .swiper-button-prev.active img{
+.swiper-button-next.active img,
+.swiper-button-prev.active img {
   opacity: 1;
   pointer-events: auto;
 }
-
-
+@media (max-width: 600px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
 .spheadbig:after {
   content: url("../../assets/img/centerimg.png");
   padding-left: 25px;
@@ -755,7 +778,7 @@ p {
 }
 @media (max-width: 1200px) and (min-width: 1024px) {
   .desktopmenu .nav-item {
-    width: 180px !important;
+    width: 160px !important;
   }
   .ictop {
     display: flex !important;
@@ -763,7 +786,7 @@ p {
 }
 @media (max-width: 1023.8px) and (min-width: 991px) {
   .desktopmenu .nav-item {
-    width: 170px !important;
+    width: 150px !important;
   }
 }
 @media (max-width: 990.8px) and (min-width: 767px) {
@@ -913,7 +936,6 @@ p {
 }
 
 .material-icons {
-  /*width: 20px;*/
   height: auto;
 }
 

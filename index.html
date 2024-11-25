@@ -18,7 +18,7 @@
             <div class="row hrow">
                 <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-xxl-2 align-self-center mobpad"><a class="weblogo"
                         href="#"><img src="assets/img/HdLogo.svg" class="logo-img"></a></div>
-                <div class="col-sm-1 col-md-7 col-lg-8 col-xl-9 col-xxl-9 mobzero">
+                <div class="col-sm-1 col-md-7 col-lg-7 col-xl-9 col-xxl-9 mobzero">
                     <ul class="nav nav-tabs d-inline-flex d-xxl-flex flex-grow-1 flex-fill justify-content-center align-content-center align-self-center justify-content-xl-evenly align-items-xl-center justify-content-xxl-around align-items-xxl-start desktopmenu"
                         style="border-width: 0px;">
                         <li class="nav-item text-center" style="margin-right: 5px;margin-left: 5px;"><a
@@ -35,7 +35,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-12 col-md-2 col-lg-1 col-xl-1 col-xxl-1 text-start d-md-flex flex-grow-1 justify-content-between align-items-center align-content-center flex-nowrap justify-content-md-center align-items-md-center mobilemenufull hrow"
+                <div class="col-sm-12 col-md-2 col-lg-2 col-xl-1 col-xxl-1 text-start d-md-flex flex-grow-1 justify-content-between align-items-center align-content-center flex-nowrap justify-content-md-center align-items-md-center mobilemenufull hrow"
                     style="display: inline-block;">
                     <div class="ictop noshow">
                         <a class="fleft noshow topicon" href="https://x.com/cryptoversidad"
@@ -1159,7 +1159,7 @@
         const swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             spaceBetween: 20,
-            loop: false, // Ensure navigation works correctly for first and last items
+            loop: false,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -1218,37 +1218,34 @@
 
         document.addEventListener("DOMContentLoaded", () => {
             const counters = document.querySelectorAll('.counter-number');
-            const speed = 200; // Time per increment, adjust for speed
+            const speed = 200;
 
             counters.forEach(counter => {
-                const target = +counter.getAttribute('data-target'); // Get target number
-                let current = 0; // Initialize counter at 0
-                const percentageSymbol = counter.querySelector('.percentage'); // Select the percentage symbol (if exists)
+                const target = +counter.getAttribute('data-target');
+                let current = 0;
+                const percentageSymbol = counter.querySelector('.percentage');
 
-                // Start the counter animation
                 const updateCounter = () => {
-                    const increment = target / speed; // Calculate increment step based on speed
-                    current = Math.min(target, current + increment); // Increment up to the target
+                    const increment = target / speed;
+                    current = Math.min(target, current + increment);
 
-                    // Format the number with commas and update the number in the p tag
-                    counter.innerHTML = Math.floor(current).toLocaleString(); // Get formatted number
+                    counter.innerHTML = Math.floor(current).toLocaleString(); 
 
                     if (percentageSymbol) {
-                        counter.appendChild(percentageSymbol); // Ensure percentage symbol is added after the number
+                        counter.appendChild(percentageSymbol);
                     }
 
                     if (current < target) {
-                        requestAnimationFrame(updateCounter); // Continue updating until target is reached
+                        requestAnimationFrame(updateCounter);
                     } else {
-                        // Ensure it reaches the exact target value
                         counter.innerHTML = target.toLocaleString();
                         if (percentageSymbol) {
-                            counter.appendChild(percentageSymbol); // Append percentage symbol if it exists
+                            counter.appendChild(percentageSymbol); 
                         }
                     }
                 };
 
-                updateCounter(); // Start the counter animation
+                updateCounter(); 
             });
         });
 
