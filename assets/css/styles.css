@@ -1,18 +1,26 @@
+@font-face {
+  font-family: "Digital Numbers";
+  src: url("../font/digital-numbers/DigitalNumbers-Regular.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 .fhead {
   width: 100%;
   display: block;
   margin: 0 auto;
   background-color: #5a36c5;
-  background-image: url('../../assets/img/Hero%20Section%20Bg.png');
+  background-image: url("../../assets/img/Hero%20Section%20Bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 0 0 70px 0;
 }
-
+/* 
 .nobg {
   background: rgba(0, 0, 0, 0);
-}
+} */
 
 .hrow {
   padding-top: 40px;
@@ -26,29 +34,36 @@
   margin: 20px 0 0 0;
 }
 
-.btn-dft {
-  width: 70%;
-  display: inline-block;
-  margin: 0 auto;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  float: left;
+/* header */
+.desktopmenu .nav-item {
+  width: 260px;
 }
-
-.topbtn {
-  float: left;
-  display: inline-block;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.btn-img {
-  width: 70%;
+.weblogo .logo-img {
+  min-width: 157px;
+  max-width: 157px;
 }
 
 .slider-sec1 {
   margin: 90px 0 0;
+  background-image: url("../img/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-sec1 .small-banner {
+  display: none;
+}
+.banner-text {
+  width: 328px;
+  height: 494px;
+  padding-top: 30px;
+  font-family: "Digital Numbers" !important;
+  font-size: 22px;
+  font-weight: bolder;
+  line-height: 36.15px;
+  text-align: left;
+  color: rgba(255, 245, 230, 1);
+  text-shadow: 0px 4px 4px rgba(73, 41, 169, 1);
 }
 
 h1,
@@ -57,11 +72,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Dela Gothic One';
+  font-family: "Dela Gothic One";
 }
 
 .sliderbtn {
-  font-family: 'Dela Gothic One';
+  font-family: "Dela Gothic One";
   font-size: 20px;
   color: #5a36c5 !important;
 }
@@ -93,7 +108,7 @@ h6 {
 } */
 
 p {
-  font-family: 'Red Hat Display';
+  font-family: "Red Hat Display";
 }
 
 .licon {
@@ -108,7 +123,7 @@ p {
 }
 
 .licon h6 {
-  font-family: 'Red Hat Display';
+  font-family: "Red Hat Display";
   font-weight: bold;
   font-size: 18px;
 }
@@ -117,12 +132,12 @@ p {
   position: relative;
 }
 .sec1 .sphead::after {
-  content: url('../../assets/img/centerimg.png');
+  content: url("../../assets/img/centerimg.png");
   position: absolute;
   right: 0;
 }
 .sec1 .sphead::before {
-  content: url('../../assets/img/top-left-img.png');
+  content: url("../../assets/img/top-left-img.png");
   position: absolute;
   top: 35px;
   left: -50px;
@@ -161,13 +176,13 @@ p {
 
 /* -----------------sec 2 start--------------------- */
 .sec2 .sphead::before {
-  content: url('../../assets/img/bottom-left-img.png');
+  content: url("../../assets/img/bottom-left-img.png");
   position: absolute;
   bottom: 10%;
   left: 0;
 }
 .sec2 .sphead::after {
-  content: url('../../assets/img/centerimg.png');
+  content: url("../../assets/img/centerimg.png");
   position: absolute;
   right: 10%;
   top: 2%;
@@ -205,7 +220,7 @@ p {
 } */
 
 .bluebtn {
-  font-family: 'Dela Gothic One';
+  font-family: "Dela Gothic One";
 }
 
 @media (max-width: 1400px) {
@@ -219,19 +234,111 @@ p {
     min-height: 115px;
   }
 }
-
+/* proyectos area css start */
+.spheadw {
+  text-align: left;
+  padding-left: 5%;
+  padding-bottom: 20px;
+  position: relative;
+}
 .spheadw:after {
-  content: url('../../assets/img/linea_horizontal%201.png');
-  padding-left: 25px;
+  content: url("../../assets/img/linea_horizontal%201.png");
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .darlimg {
-  background: url('../../assets/img/darklimg.png') no-repeat left top;
+  background: url("../../assets/img/darklimg.png") no-repeat left top;
   padding-left: 5%;
 }
+/* swiper code */
+.proyectos .swiper-container {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.proyectos .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proyectos .swiper-slide .box {
+  padding: 25px;
+  background: rgba(255, 247, 235, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border: 2px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.proyectos .swiper-slide .box img {
+  width: 100%;
+}
+.proyectos .swiper-slide .box .box-text {
+  padding: 25px 0 0 0;
+  font-family: "Red Hat Display";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 33.07px;
+  text-align: center;
+  flex: 1; /* Allows text to stretch if needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Handle multi-line ellipsis */
+  white-space: pre-wrap; /* Allow wrapping for text */
+  overflow: hidden;
+  word-wrap: break-word;
+  color: rgba(90, 54, 197, 1);
+
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute !important;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  cursor: pointer;
+  z-index: 5000;
+}
+
+.swiper-button-next {
+  right: -25px; /* 50% inside, 50% outside */
+}
+
+.swiper-button-prev {
+  left: -25px; /* 50% inside, 50% outside */
+}
+
+/* Hide buttons initially */
+.swiper-button-next, .swiper-button-prev {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Show buttons when needed */
+.swiper-button-next.active, .swiper-button-prev.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 .spheadbig:after {
-  content: url('../../assets/img/centerimg.png');
+  content: url("../../assets/img/centerimg.png");
   padding-left: 25px;
 }
 
@@ -281,7 +388,7 @@ p {
 }
 
 .mtopimg {
-  background: url('../../assets/img/modelTop.png') no-repeat top center;
+  background: url("../../assets/img/modelTop.png") no-repeat top center;
   padding: 50px;
   width: 100%;
   display: block;
@@ -289,7 +396,7 @@ p {
 }
 
 .mbotimg {
-  background: url('../../assets/img/Group%20225.png') no-repeat bottom center;
+  background: url("../../assets/img/Group%20225.png") no-repeat bottom center;
   width: 100%;
   display: block;
   min-height: 70px;
@@ -310,8 +417,6 @@ p {
 
 @media (max-width: 767px) {
   .weblogo {
-    /*display: block;*/
-    /*margin: 0 auto;*/
     width: 100%;
     text-align: center;
   }
@@ -388,9 +493,6 @@ p {
   }
 }
 
-div {
-}
-
 @media (max-width: 767px) {
   .slider-sec1 {
     margin: 20px 0 0;
@@ -411,11 +513,8 @@ div {
   vertical-align: middle;
 }
 
-a {
-}
-
 .dropdown:after {
-  content: '';
+  content: "";
 }
 
 .mobmenu {
@@ -435,9 +534,53 @@ a {
   }
 }
 
+@media (max-width: 1280px) {
+  .nav-tabs {
+    justify-content: space-around !important;
+  }
+}
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .desktopmenu .nav-item {
+    width: 200px !important;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .desktopmenu .nav-item {
+    width: 180px !important;
+  }
+  .ictop {
+    display: flex !important;
+  }
+}
+@media (max-width: 1023.8px) and (min-width: 991px) {
+  .desktopmenu .nav-item {
+    width: 170px !important;
+  }
+}
+@media (max-width: 990.8px) and (min-width: 767px) {
+  .desktopmenu .nav-item {
+    width: auto !important;
+  }
+  .weblogo .logo-img {
+    min-width: 125px !important;
+    max-width: 125px !important;
+  }
+}
 @media (max-width: 766px) {
   .desktopmenu {
     display: none !important;
+  }
+  .slider-sec1 {
+    background-image: none;
+  }
+  .slider-sec1 .small-banner {
+    display: block;
+  }
+  .slider-sec1 .small-banner img {
+    width: 100%;
+  }
+  .banner-text {
+    height: auto;
   }
 }
 
@@ -556,7 +699,8 @@ a {
 }
 
 .desktopmenu {
-  float: right !important;
+  float: right;
+  width: 100%;
 }
 
 .material-icons {
