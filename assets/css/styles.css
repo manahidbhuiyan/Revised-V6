@@ -24,6 +24,8 @@
 
 .hrow {
   padding-top: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .icpad {
@@ -104,6 +106,10 @@ h6 {
 /* -----------------sec 1 start--------------------- */
 .sec1 {
   background: #fffbf5;
+  background-image: url(../img/nuestros-bg.png);
+  background-position: bottom right; /* Align the image to the bottom */
+  background-size: contain; /* Scale the image so that it overflows 20% at the bottom */
+  background-repeat: no-repeat;
 }
 .sec1 .sec1-content {
   margin-bottom: 50px;
@@ -184,6 +190,12 @@ p {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .sec1 .course p {
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 767px) {
   .sec1 .sphead::after,
   .sec1 .sphead::before {
@@ -197,6 +209,72 @@ p {
   }
 } */
 /* -----------------sec 1 end--------------------- */
+/* -----------------counter sec start--------------------- */
+.counter-parent-sec.sec2 {
+  background-color: #fff5e6;
+  background-image: none;
+}
+.sec2 .counter-section .sphead::before {
+  content: url('../../assets/img/bottom-left-img.png');
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+.sec2 .counter-section .sphead::after {
+  content: url('../../assets/img/centerimg.png');
+  position: absolute;
+  right: 0%;
+  top: 2%;
+}
+.sec2 .content-counter {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 25px;
+}
+.sec2 .content-counter #det {
+  margin-bottom: 30px;
+}
+.sec2 .content-counter p {
+  max-width: 573px;
+  line-height: 33px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #5a36c5;
+  text-align: center;
+}
+.sec2 .content-counter .counter-number {
+  font-family: "Dela Gothic One";
+  line-height: 72px;
+  font-size: 50px;
+  color: #5a36c5;
+  text-shadow: 4px 4px 4px #5A36C53B;
+  text-align: center;
+  margin: 0 !important;
+}
+@media (max-width: 767px) {
+  .sec2 .counter-section .sphead::after,
+  .sec2 .counter-section .sphead::before {
+    content: none;
+  }
+  .sec2 .content-counter {
+    padding: 0 25px;
+}
+}
+@media (max-width: 991px) {
+ 
+  .sec2 .counter-section .content-counter p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .sec2 .content-counter .counter-number {
+    line-height: 52px !important;
+  font-size: 30px !important;
+  }
+}
+/* -----------------counter sec end--------------------- */
 
 /* -----------------sec 2 start--------------------- */
 .sec2{
@@ -204,6 +282,8 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  background-color: #FFF5E6;
 }
 .sec2 .sphead::before {
   content: url('../../assets/img/bottom-left-img.png');
@@ -237,6 +317,9 @@ p {
   .sec2 .sphead::after,
   .sec2 .sphead::before {
     content: none;
+  }
+  .sec2 .content  {
+    padding: 0 0 55px 0;
   }
 }
 @media (max-width: 991px) {
@@ -280,12 +363,33 @@ p {
   line-height: 42.34px;
   color: #5a36c5;
 }
+@media (max-width: 576px) {
+  .sec4 .content p {
+    font-size: 22px;
+  }
+  .sec4 .content h4 {
+    font-size: 22px;
+  }
+}
 /* -----------------sec 4 end--------------------- */
 /* -----------------sec 5 start--------------------- */
 .sec5 {
   background-color: #fff5e6;
 }
 /* -----------------sec 5 end--------------------- */
+/* -----------------sec 6 start--------------------- */
+@media (max-width: 768px) {
+  .brand-image img{
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sec6 h1 {
+    font-size: 20px !important;
+  }
+}
+/* -----------------sec 6 end--------------------- */
 
 .boxsec {
   background: #fff7eb;
@@ -336,6 +440,14 @@ p {
   padding-left: 5%;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .darlimg {
+    background: none;
+    padding-left: 0;
+    position: relative;
+}
+}
 /* swiper code */
 .proyectos .swiper-container {
   width: 100%;
@@ -373,13 +485,12 @@ p {
   font-weight: 600;
   line-height: 33.07px;
   text-align: center;
-  flex: 1; /* Allows text to stretch if needed */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* Handle multi-line ellipsis */
-  white-space: pre-wrap; /* Allow wrapping for text */
+  white-space: pre-wrap; 
   overflow: hidden;
   word-wrap: break-word;
   color: rgba(90, 54, 197, 1);
@@ -393,12 +504,18 @@ p {
   transform: translateY(-50%);
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none !important;
+  }
+}
 .swiper-button-next::after, .swiper-button-prev::after {
   display: none;
 }
 
 .swiper-button-next {
-  right: -3% !important; 
+  right: -32px !important; 
 }
 
 .swiper-button-prev {
@@ -459,7 +576,7 @@ p {
   width: 100% !important;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .ggimg99 {
     width: 100%;
   }
@@ -562,6 +679,7 @@ p {
   position: fixed;
   top: 170px;
   right: 0;
+  z-index: 999;
 }
 
 .ifloat a {
