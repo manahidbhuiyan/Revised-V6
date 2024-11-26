@@ -238,17 +238,20 @@ p {
   margin-bottom: 30px;
 }
 .sec2 .content-counter p {
+  font-family: "Dela Gothic One";
   max-width: 573px;
-  line-height: 33px;
-  font-weight: 600;
-  font-size: 22px;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 24px;
   color: #5a36c5;
   text-align: center;
+  text-shadow: 4px 4px 4px rgba(90, 54, 197, 0.23);
 }
 .sec2 .content-counter .counter-number {
   font-family: "Dela Gothic One";
-  line-height: 72px;
+  line-height: 72.4px;
   font-size: 50px;
+  font-weight: 400;
   color: #5a36c5;
   text-shadow: 4px 4px 4px #5a36c53b;
   text-align: center;
@@ -438,8 +441,13 @@ p {
   background: url("../../assets/img/darklimg.png") no-repeat left top;
   padding-left: 5%;
   position: relative;
-  max-width: 90%;
-  margin: 0 auto;
+}
+
+@media (max-width: 1220px) {
+  .darlimg {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -467,11 +475,11 @@ p {
 .proyectos .swiper-slide .box {
   padding: 25px;
   background: rgba(255, 247, 235, 1);
-  border: 2px solid rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 1) !important;
   border: 2px;
   border-radius: 5px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  height: 360px;
+  height: 340px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -480,7 +488,11 @@ p {
 .proyectos .swiper-slide .box img {
   width: 100%;
 }
-.proyectos .swiper-slide .box .box-text {
+.proyectos .swiper-slide a {
+  color: rgba(90, 54, 197, 1);
+  text-decoration: none;
+}
+.proyectos .swiper-slide a .box .box-text {
   padding: 25px 0 0 0;
   font-family: "Red Hat Display";
   font-size: 20px;
@@ -495,7 +507,7 @@ p {
   white-space: pre-wrap;
   overflow: hidden;
   word-wrap: break-word;
-  color: rgba(90, 54, 197, 1);
+  /* color: rgba(90, 54, 197, 1); */
 }
 
 .swiper-button-next,
@@ -513,32 +525,34 @@ p {
 }
 
 .swiper-button-next {
-  right: -32px !important;
+  right: -30px !important;
 }
 
 .swiper-button-prev {
   left: 34px !important;
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .swiper-button-prev {
+    left: 25px !important;
+  }
+} 
+@media (max-width: 1200px) and (min-width: 991px) {
+  .swiper-button-prev {
+    left: 18px !important;
+  }
+} 
+@media (max-width: 991px) and (min-width: 768px) {
+  .swiper-button-prev {
+    left: 6px !important;
+  }
 }
 @media (max-width: 768px) {
   .swiper-button-prev {
     left: -32px !important;
   }
 }
-@media (max-width: 991px) and (min-width:768px) {
-  .swiper-button-prev {
-    left: 6px !important;
-  }
-}
-@media (max-width: 1024px) and (min-width:991px) {
-  .swiper-button-prev {
-    left: 12px !important;
-  }
-}
-@media (max-width: 1400px) and (min-width:1100px) {
-  .swiper-button-prev {
-    left: 25px !important;
-  }
-}
+
 /* Hide buttons initially */
 .swiper-button-next img,
 .swiper-button-prev img {
