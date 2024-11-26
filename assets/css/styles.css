@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Digital Numbers";
-  src: url("../font/digital-numbers/DigitalNumbers-Regular.ttf")
-    format("truetype");
+  font-family: 'Digital Numbers';
+  src: url('../font/digital-numbers/DigitalNumbers-Regular.ttf')
+    format('truetype');
   font-weight: 900;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
   display: block;
   margin: 0 auto;
   background-color: #5a36c5;
-  background-image: url("../../assets/img/Hero%20Section%20Bg.png");
+  background-image: url('../../assets/img/Hero%20Section%20Bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -47,7 +47,7 @@
 
 .slider-sec1 {
   margin: 90px 0 0;
-  background-image: url("../img/banner.png");
+  background-image: url('../img/banner.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,7 +59,7 @@
   width: 328px;
   height: 494px;
   padding-top: 30px;
-  font-family: "Digital Numbers" !important;
+  font-family: 'Digital Numbers' !important;
   font-size: 22px;
   font-weight: bolder;
   line-height: 36.15px;
@@ -74,11 +74,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Dela Gothic One";
+  font-family: 'Dela Gothic One';
 }
 
 .sliderbtn {
-  font-family: "Dela Gothic One";
+  font-family: 'Dela Gothic One';
   font-size: 20px;
   color: #5a36c5 !important;
 }
@@ -125,13 +125,13 @@ h6 {
   color: #fff5e6;
   margin-top: 15px;
   max-width: 424px;
-  line-height: 33px;
+  line-height: 31.75px;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 p {
-  font-family: "Red Hat Display";
+  font-family: 'Red Hat Display';
 }
 /* check it */
 .licon {
@@ -146,7 +146,7 @@ p {
 }
 
 .licon h6 {
-  font-family: "Red Hat Display";
+  font-family: 'Red Hat Display';
   font-weight: bold;
   font-size: 18px;
 }
@@ -155,12 +155,12 @@ p {
   position: relative;
 }
 .sec1 .sphead::after {
-  content: url("../../assets/img/centerimg.png");
+  content: url('../../assets/img/centerimg.png');
   position: absolute;
   right: 0;
 }
 .sec1 .sphead::before {
-  content: url("../../assets/img/top-left-img.png");
+  content: url('../../assets/img/top-left-img.png');
   position: absolute;
   top: 35px;
   left: -50px;
@@ -215,13 +215,13 @@ p {
   background-image: none;
 }
 .sec2 .counter-section .sphead::before {
-  content: url("../../assets/img/bottom-left-img.png");
+  content: url('../../assets/img/bottom-left-img.png');
   position: absolute;
   bottom: 10%;
   left: 0;
 }
 .sec2 .counter-section .sphead::after {
-  content: url("../../assets/img/centerimg.png");
+  content: url('../../assets/img/centerimg.png');
   position: absolute;
   right: 0%;
   top: 2%;
@@ -246,7 +246,7 @@ p {
   text-align: center;
 }
 .sec2 .content-counter .counter-number {
-  font-family: "Dela Gothic One";
+  font-family: 'Dela Gothic One';
   line-height: 72px;
   font-size: 50px;
   color: #5a36c5;
@@ -285,13 +285,13 @@ p {
   background-color: #fff5e6;
 }
 .sec2 .sphead::before {
-  content: url("../../assets/img/bottom-left-img.png");
+  content: url('../../assets/img/bottom-left-img.png');
   position: absolute;
   bottom: 10%;
   left: 0;
 }
 .sec2 .sphead::after {
-  content: url("../../assets/img/centerimg.png");
+  content: url('../../assets/img/centerimg.png');
   position: absolute;
   right: 10%;
   top: 2%;
@@ -306,9 +306,9 @@ p {
 }
 .sec2 .content p {
   max-width: 573px;
-  line-height: 33px;
+  line-height: 31.75px;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   color: #5a36c5;
   margin-bottom: 55px;
 }
@@ -343,8 +343,8 @@ p {
   max-width: 1335px;
   margin: 0 auto;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 42.34px;
+  font-size: 24px;
+  line-height: 31.75px;
   color: #5a36c5;
   margin-bottom: 30px;
 }
@@ -356,10 +356,10 @@ p {
   padding-top: 3px;
 }
 .sec4 .content h4 {
-  font-family: "Red Hat Display";
+  font-family: 'Red Hat Display';
   font-weight: 700;
-  font-size: 32px;
-  line-height: 42.34px;
+  font-size: 24px;
+  line-height: 31.75px;
   color: #5a36c5;
 }
 @media (max-width: 576px) {
@@ -377,9 +377,30 @@ p {
 }
 /* -----------------sec 5 end--------------------- */
 /* -----------------sec 6 start--------------------- */
-@media (max-width: 768px) {
+.sec6 {
+  padding-bottom: 90px;
+  padding-top: 80px;
+  background: #f7f7f7 url(../img/FAQBG.png) center / cover no-repeat;
+}
+@media (min-width: 768px) and (max-width: 991px) {
   .brand-image img {
-    margin-bottom: 20px;
+    max-width: 70% !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .brand-image {
+    margin-bottom: 30px !important;
+  }
+  .brand-image .image-container {
+    margin-bottom: 20px !important;
+  }
+  .brand-image img {
+    max-width: 60% !important;
+    margin: 0 auto !important;
+  }
+  .sec6 h1 {
+    margin-bottom: 80px !important;
   }
 }
 
@@ -406,7 +427,7 @@ p {
 } */
 
 .bluebtn {
-  font-family: "Dela Gothic One";
+  font-family: 'Dela Gothic One';
 }
 
 @media (max-width: 1400px) {
@@ -428,14 +449,14 @@ p {
   position: relative;
 }
 .spheadw:after {
-  content: url("../../assets/img/linea_horizontal%201.png");
+  content: url('../../assets/img/linea_horizontal%201.png');
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .darlimg {
-  background: url("../../assets/img/darklimg.png") no-repeat left top;
+  background: url('../../assets/img/darklimg.png') no-repeat left top;
   padding-left: 5%;
   position: relative;
   max-width: 90%;
@@ -482,7 +503,7 @@ p {
 }
 .proyectos .swiper-slide .box .box-text {
   padding: 25px 0 0 0;
-  font-family: "Red Hat Display";
+  font-family: 'Red Hat Display';
   font-size: 20px;
   font-weight: 600;
   line-height: 33.07px;
@@ -524,17 +545,17 @@ p {
     left: -32px !important;
   }
 }
-@media (max-width: 991px) and (min-width:768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .swiper-button-prev {
     left: 6px !important;
   }
 }
-@media (max-width: 1024px) and (min-width:991px) {
+@media (max-width: 1024px) and (min-width: 991px) {
   .swiper-button-prev {
     left: 12px !important;
   }
 }
-@media (max-width: 1400px) and (min-width:1100px) {
+@media (max-width: 1400px) and (min-width: 1100px) {
   .swiper-button-prev {
     left: 25px !important;
   }
@@ -560,7 +581,7 @@ p {
   }
 }
 .spheadbig:after {
-  content: url("../../assets/img/centerimg.png");
+  content: url('../../assets/img/centerimg.png');
   padding-left: 25px;
 }
 
@@ -611,7 +632,7 @@ p {
 
 .footerlogo {
   display: block;
-  margin: 10px auto 50px;
+  margin: 10px auto 35px;
 }
 
 .modal-body .btn-close {
@@ -619,7 +640,7 @@ p {
 }
 
 .mtopimg {
-  background: url("../../assets/img/modelTop.png") no-repeat top center;
+  background: url('../../assets/img/modelTop.png') no-repeat top center;
   padding: 50px;
   width: 100%;
   display: block;
@@ -627,7 +648,7 @@ p {
 }
 
 .mbotimg {
-  background: url("../../assets/img/Group%20225.png") no-repeat bottom center;
+  background: url('../../assets/img/Group%20225.png') no-repeat bottom center;
   width: 100%;
   display: block;
   min-height: 70px;
@@ -746,7 +767,7 @@ p {
 }
 
 .dropdown:after {
-  content: "";
+  content: '';
 }
 
 .mobmenu {
