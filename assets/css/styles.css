@@ -107,8 +107,8 @@ h6 {
 .sec1 {
   background: #fffbf5;
   background-image: url(../img/nuestros-bg.png);
-  background-position: bottom right; /* Align the image to the bottom */
-  background-size: contain; /* Scale the image so that it overflows 20% at the bottom */
+  background-position: bottom right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .sec1 .sec1-content {
@@ -125,15 +125,14 @@ h6 {
   color: #fff5e6;
   margin-top: 15px;
   max-width: 424px;
-  line-height: 33px;
+  line-height: 31.7px;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 p {
   font-family: "Red Hat Display";
 }
-/* check it */
 .licon {
   width: 100%;
   display: block;
@@ -150,7 +149,6 @@ p {
   font-weight: bold;
   font-size: 18px;
 }
-/*  */
 .sphead {
   position: relative;
 }
@@ -203,11 +201,6 @@ p {
   }
 }
 
-/* @media (max-width: 996px) {
-  .sec1-row-rimg {
-    background: none;
-  }
-} */
 /* -----------------sec 1 end--------------------- */
 /* -----------------counter sec start--------------------- */
 .counter-parent-sec.sec2 {
@@ -309,9 +302,9 @@ p {
 }
 .sec2 .content p {
   max-width: 573px;
-  line-height: 33px;
+  line-height: 31.75px;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   color: #5a36c5;
   margin-bottom: 55px;
 }
@@ -346,8 +339,8 @@ p {
   max-width: 1335px;
   margin: 0 auto;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 42.34px;
+  font-size: 24px;
+  line-height: 31.75px;
   color: #5a36c5;
   margin-bottom: 30px;
 }
@@ -361,8 +354,8 @@ p {
 .sec4 .content h4 {
   font-family: "Red Hat Display";
   font-weight: 700;
-  font-size: 32px;
-  line-height: 42.34px;
+  font-size: 24px;
+  line-height: 31.75px;
   color: #5a36c5;
 }
 @media (max-width: 576px) {
@@ -380,9 +373,30 @@ p {
 }
 /* -----------------sec 5 end--------------------- */
 /* -----------------sec 6 start--------------------- */
-@media (max-width: 768px) {
+.sec6 {
+  padding-bottom: 90px;
+  padding-top: 80px;
+  background: #f7f7f7 url(../img/FAQBG.png) center / cover no-repeat;
+}
+@media (min-width: 768px) and (max-width: 991px) {
   .brand-image img {
-    margin-bottom: 20px;
+    max-width: 70% !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .brand-image {
+    margin-bottom: 30px !important;
+  }
+  .brand-image .image-container {
+    margin-bottom: 20px !important;
+  }
+  .brand-image img {
+    max-width: 60% !important;
+    margin: 0 auto !important;
+  }
+  .sec6 h1 {
+    margin-bottom: 80px !important;
   }
 }
 
@@ -507,7 +521,6 @@ p {
   white-space: pre-wrap;
   overflow: hidden;
   word-wrap: break-word;
-  /* color: rgba(90, 54, 197, 1); */
 }
 
 .swiper-button-next,
@@ -625,7 +638,7 @@ p {
 
 .footerlogo {
   display: block;
-  margin: 10px auto 50px;
+  margin: 10px auto 35px;
 }
 
 .modal-body .btn-close {
